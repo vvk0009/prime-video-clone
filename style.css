@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 21px;
+  list-style: none;
+  background-color: black;
+  height: 8vh;
+  margin: 9px 260px;
+  border-radius: 10px;
+  position: fixed;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+ul li a .fa-solid {
+  transition: all 0.2s ease-in-out;
+}
+ul li a .fa-solid:hover {
+  transform: rotate(180deg);
+}
+
+.img_slider {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_1 {
+  position: relative;
+  overflow: hidden;
+  margin-left: 90px;
+}
+.images {
+  display: flex;
+  width: 100%;
+}
+.images img {
+  height: 500px;
+  width: 100%;
+  transition: all 0.15s ease;
+  object-fit: cover;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {
+  background: #fff;
+}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+}
+
+.slide-item .slider {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  overflow-y: auto;
+  scrollbar-width: none;
+  gap: 10px;
+  margin-left: 90px;
+  margin-right: -210px;
+}
+.slide-item .slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-item .slider .img-item {
+  object-fit: cover;
+  width: 290px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1299px;
+}
+
+.heading {
+  color: white;
+  margin-left: 90px;
+  margin-bottom: 12px;
+}
+.heading_1 {
+  margin-top: 20px;
+}
+.img-item_1 {
+  object-fit: cover;
+  width: 330px;
+  height: 420px;
+  border-radius: 5px;
+}
+footer {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+footer .pv img {
+  width: 150px;
+}
+footer .amazon a {
+  color: #79b8f3;
+  text-decoration: none;
+}
+footer .amazon p {
+  color: #fff;
+}
+footer .amazon {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
