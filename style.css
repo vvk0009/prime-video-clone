@@ -147,3 +147,80 @@ footer .amazon {
   gap: 10px;
   margin-bottom: 12px;
 }
+.mobile_nav{
+  display: none;
+}
+
+.mobile_footer{
+  display: none;
+}
+
+
+@media (max-width:915px){
+  nav{
+    display: none;
+  }
+
+  .mobile_nav{
+    display: block;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+  }
+  .mobile_nav img{
+    width: 190px;
+    margin-left: 30px;
+  }
+
+  .mobile_nav i{
+    font-size: 30px;
+    position: relative;
+    left: 350px;
+
+  }
+
+  .img_slider{
+    margin-left: -90px;
+    margin-right: -200px;
+    
+  }
+  .slide-item{
+    margin-left: -70px;
+  }
+  .heading{
+    margin-left: 19px;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .mobile_footer{
+    display: block;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content:end;
+    flex-direction: column;
+  }
+
+  .mobile_footer .pv img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .mobile_footer .amazon{
+    color: white;
+    margin-right: -60px;
+  }
+
+  .mobile_footer .amazon a{
+    text-decoration: none;
+    color: #79b8f3;
+
+  }
+}
